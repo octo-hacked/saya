@@ -18,13 +18,7 @@ const Hero = () => {
     const toggle = (index) => {
         setOpen(open === index ? null : index);
     };
-    const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setIsMobile(window.innerWidth <= 768);
-        }
-    }, []);
     return (
         <div>
             <motion.div
@@ -53,7 +47,7 @@ const Hero = () => {
             </motion.div>
             <div className='container max-w-[90vw] lg:w-[75vw] mx-auto flex flex-col md:flex-row items-center md:items-start my-20 gap-8'>
                 <motion.div
-                    initial={isMobile ? { opacity: 0, y: -100 } : { scale: 1.3, opacity: 0, y: -100 }}
+                    initial= {{ opacity: 0, y: -100} }
                     whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
@@ -82,7 +76,7 @@ const Hero = () => {
             <div className="container max-w-[90vw] lg:w-[75vw] mx-auto flex flex-col md:flex-row-reverse items-center my-10 gap-6">
                 {/* Image comes first on small screens */}
                 <motion.div
-                     initial={isMobile ? { opacity: 0, y: -100 } : { scale: 1.3, opacity: 0, y: -100 }}
+                     initial= {{ opacity: 0, y: -100} }
                     whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
@@ -169,7 +163,7 @@ const Hero = () => {
             </motion.div>
             <div className="container w-[90vw] lg:w-[75vw] mx-auto my-5 flex flex-col-reverse md:flex-row-reverse items-center gap-6 md:gap-10">
                 <motion.div
-                     initial={isMobile ? { opacity: 0, y: -100 } : { scale: 1.3, opacity: 0, y: -100 }}
+                     initial= {{ opacity: 0, y: -100} }
                     whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
