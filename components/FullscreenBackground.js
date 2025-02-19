@@ -26,7 +26,7 @@ const FullscreenBackground = () => {
         <span>Y A</span>
       </div>
 
-      <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 text-white text-2xl font-bold text-center">
+      <div className="hidden md:block absolute bottom-1/4 left-1/2 transform -translate-x-1/2 text-white text-2xl font-bold text-center">
         <h2>Go-to solution for all your elevator needs</h2>
       </div>
     </div>
