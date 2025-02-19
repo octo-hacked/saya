@@ -47,8 +47,8 @@ const Hero = () => {
             </motion.div>
             <div className='container max-w-[90vw] lg:w-[75vw] mx-auto flex flex-col md:flex-row items-center md:items-start my-20 gap-8'>
                 <motion.div
-                    initial={{ scale: 1.3, opacity: 0, z: -100 }}
-                    whileInView={{ scale: 1, opacity: 1, z: 0 }}
+                    initial={{ scale: 1.3, opacity: 0, y: -100 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className='w-full sm:w-4/5 md:w-2/5'
@@ -57,8 +57,8 @@ const Hero = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className='w-full sm:w-4/5 md:w-3/5 my-auto p-5 flex flex-col gap-4 text-center md:text-left'
@@ -76,8 +76,8 @@ const Hero = () => {
             <div className="container max-w-[90vw] lg:w-[75vw] mx-auto flex flex-col md:flex-row-reverse items-center my-10 gap-6">
                 {/* Image comes first on small screens */}
                 <motion.div
-                    initial={{ scale: 1.3, opacity: 0, z: -100 }}
-                    whileInView={{ scale: 1, opacity: 1, z: 0 }}
+                    initial={{ scale: 1.3, opacity: 0, y: -100 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className="w-full md:w-2/5"
@@ -87,8 +87,8 @@ const Hero = () => {
 
                 {/* Text comes below image on small screens */}
                 <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0,y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className="w-full md:w-3/5 p-5 flex flex-col gap-4 text-center md:text-left"
@@ -163,8 +163,8 @@ const Hero = () => {
             </motion.div>
             <div className="container w-[90vw] lg:w-[75vw] mx-auto my-5 flex flex-col-reverse md:flex-row-reverse items-center gap-6 md:gap-10">
                 <motion.div
-                    initial={{ scale: 1.3, opacity: 0, z: -100 }}
-                    whileInView={{ scale: 1, opacity: 1, z: 0 }}
+                    initial={{ scale: 1.3, opacity: 0, y: -100 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className="w-full md:w-[50%]"
@@ -173,8 +173,8 @@ const Hero = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true, amount: 0.2 }}
                     className="w-full md:w-[50%] flex flex-col gap-4 p-4 md:p-6"
@@ -235,7 +235,7 @@ const Hero = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="container w-[90vw] md:w-[65vw] mx-auto"
             >
-                <div className="flex flex-col justify-center items-center gap-4 my-2 w-full md:w-[50%] mx-auto border-b-2 py-5 text-center">
+                <div className="flex flex-col justify-center items-center gap-4 my-2 w-full md:w-[50%] mx-auto border-b-2 py-5 text-center ">
                     <h1 className="text-xl md:text-3xl font-bold font-sans">Why Choose Us?</h1>
                     <p className="text-sm md:text-lg">
                         Here at our company, we take pride in offering only the highest quality elevator materials to ensure the utmost safety and reliability for our customers.
@@ -276,7 +276,7 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
-            <div className="container w-[60vw] mx-auto my-12">
+            <div className="container w-full md:w-[75vw] mx-auto my-12 px-5">
                 <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {testimonials.map((testimonial, index) => (
